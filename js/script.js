@@ -16,4 +16,18 @@ Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dat
 Le validazioni e i controlli possiamo farli anche in un secondo momento.
 */
 
-const button = document.getElementById('grid-btn');
+const button = document.getElementById('create-grid-btn');
+
+button.addEventListener('click', function () {
+    console.log('clicked');
+
+    const gridElement = createGrid();
+
+    //creare celle da 1 a 100
+    for (let i = 0; i <= 100; i++) {
+        const cellElement = createCell(i);
+
+        gridElement.append(cellElement);
+    }
+}
+)
