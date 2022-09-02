@@ -7,3 +7,23 @@
 body {
     font-family: sans-serif;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid {
+    display: flex;
+    border: 1px solid black;
+    width: 100vh;
+    height: 100vh;
+}
+
+.cell {
+    display: flex;
+    border: 1px solid black;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
