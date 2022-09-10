@@ -9,21 +9,28 @@ body {
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #grid {
     display: flex;
-    border: 1px solid black;
-    width: 100vh;
-    height: 100vh;
+    flex-wrap: wrap;
 }
 
 .cell {
     display: flex;
-    border: 1px solid black;
+    border: 2px solid black;
     width: calc(100% / 10);
-    height: calc(100% / 10);
+    padding: 50px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.even {
+    background-color: red;
+}
+
+.odd {
+    background-color: blue;
 }
